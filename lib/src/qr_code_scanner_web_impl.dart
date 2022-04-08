@@ -148,9 +148,13 @@ class _QrCodeCameraWebImplState extends State<QrCodeCameraWebImpl> {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      height: double.infinity,
-      width: double.infinity,
+    return ConstrainedBox(
+      constraints: BoxConstraints(
+        maxWidth: MediaQuery.of(context).size.width,
+        maxHeight: MediaQuery.of(context).size.height,
+        minWidth: 400,
+        minHeight: 300,
+      ),
       child: FittedBox(
         fit: widget.fit,
         child: _videoWidget,
