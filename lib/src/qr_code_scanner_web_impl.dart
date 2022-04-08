@@ -154,8 +154,6 @@ class _QrCodeCameraWebImplState extends State<QrCodeCameraWebImpl> {
         constraints: BoxConstraints(
           maxWidth: MediaQuery.of(context).size.width,
           maxHeight: MediaQuery.of(context).size.height,
-          minWidth: 400,
-          minHeight: 300,
         ),
         child: _videoWidget,
       ),
