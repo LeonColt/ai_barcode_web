@@ -153,11 +153,7 @@ class _QrCodeCameraWebImplState extends State<QrCodeCameraWebImpl> {
       width: double.infinity,
       child: FittedBox(
         fit: widget.fit,
-        child: SizedBox(
-          width: 400,
-          height: 300,
-          child: _videoWidget,
-        ),
+        child: _videoWidget,
       ),
     );
   }
